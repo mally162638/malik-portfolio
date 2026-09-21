@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <title>Malik-Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="logo">MALLY</a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="#contact" class="menu-btn">Let's talk</a>
+
+            <!-- Mobile / tablet menu button -->
+            <button class="hamburger" id="menuToggle" type="button"
+                    aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- =========================
+         MOBILE SIDEBAR
+         (kept outside <header> on purpose)
+    ========================== -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <aside class="sidebar" id="sidebar" aria-label="Menu">
+
+        <div class="sidebar-top">
+            <a href="#home" class="logo">MALLY</a>
+            <button class="sidebar-close" id="menuClose" type="button" aria-label="Close menu"></button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#about"><small>01</small>About</a>
+            <a href="#projects"><small>02</small>Projects</a>
+            <a href="#skills"><small>03</small>Skills</a>
+            <a href="#contact"><small>04</small>Contact</a>
+        </nav>
+
+        <a href="#contact" class="sidebar-cta">Let's talk</a>
+
+        <div class="sidebar-footer">
+            <div class="sidebar-socials">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GITHUB</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+                <a href="https://x.com/" target="_blank" rel="noopener noreferrer">X</a>
+            </div>
+            <a href="mailto:akintundemalik93@email.com" class="sidebar-email">akintundemalik93@email.com</a>
+        </div>
+
+    </aside>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="hero-intro">HELLO, I'M</p>
+                <h1>MALIK <span class="last-name">AKINTUNDE</span></h1>
+                <p class="hero-role">SOFTWARE DEVELOPER</p>
+                <a href="#projects" class="hero-link">VIEW MY WORK</a>
+            </div>
+            <div class="hero-image">
+                <img src="media/newhero.PNG" alt="Malik Akintunde">
+            </div>
+            <div class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+
+            <div class="about-label">
+                <span>01</span>
+                <span>ABOUT ME</span>
+            </div>
+
+            <div class="about-content">
+
+                <h2>
+                    I BUILD
+                    <span>DIGITAL EXPERIENCES</span>
+                    THAT MAKE AN IMPACT.
+                </h2>
+
+                <div class="about-bottom">
+
+                    <p>
+                        I'm Malik Akintunde, a software developer focused on
+                        creating modern, responsive and user-friendly digital
+                        experiences. I work across both frontend and backend
+                        development, turning ideas into functional web applications.
+                    </p>
+
+                    <a href="#contact" class="about-link">
+                        MORE ABOUT ME
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="projects" id="projects">
+
+            <div class="projects-header">
+                <span>02</span>
+                <span>SELECTED WORK</span>
+            </div>
+
+            <div class="projects-title">
+                <h2>SELECTED<br><span>PROJECTS</span></h2>
+
+                <p>
+                    A selection of projects I've designed and developed
+                    across frontend and backend technologies.
+                </p>
+            </div>
+
+            <div class="project-list">
+
+                <!-- PROJECT 01 -->
+                <article class="project-item">
+
+                    <div class="project-number">01</div>
+
+                    <div class="project-info">
+
+                        <h3>SECUREBANK</h3>
+
+                        <p>
+                            A modern banking website designed to provide
+                            customers with a secure and intuitive digital
+                            banking experience.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JAVASCRIPT</span>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="project-view">VIEW PROJECT ↗</a>
+
+                </article>
+
+                <!-- PROJECT 02 -->
+                <article class="project-item">
+
+                    <div class="project-number">02</div>
+
+                    <div class="project-info">
+
+                        <h3>TRAVEL WEBSITE</h3>
+
+                        <p>
+                            A responsive travel platform created to help
+                            users discover destinations and plan memorable trips.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JAVASCRIPT</span>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="project-view">VIEW PROJECT ↗</a>
+
+                </article>
+
+                <!-- PROJECT 03 -->
+                <article class="project-item">
+
+                    <div class="project-number">03</div>
+
+                    <div class="project-info">
+
+                        <h3>PORTFOLIO WEBSITE</h3>
+
+                        <p>
+                            A personal developer portfolio focused on bold
+                            typography, clean interactions and responsive design.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JAVASCRIPT</span>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="project-view">VIEW PROJECT ↗</a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="skills" id="skills">
+
+            <div class="skills-header">
+                <span>03</span>
+                <span>MY EXPERTISE</span>
+            </div>
+
+            <div class="skills-intro">
+                <h2>
+                    WHAT I
+                    <span>DO</span>
+                </h2>
+
+                <p>
+                    I build modern digital products from the interface
+                    users see to the systems working behind the scenes.
+                </p>
+            </div>
+
+            <div class="skills-list">
+
+                <!-- FRONTEND -->
+                <div class="skill-row">
+
+                    <div class="skill-number">01</div>
+
+                    <div class="skill-name">
+                        <h3>FRONTEND DEVELOPMENT</h3>
+
+                        <p>
+                            Creating responsive, accessible and interactive
+                            interfaces that work beautifully across devices.
+                        </p>
+                    </div>
+
+                    <div class="skill-tools">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JAVASCRIPT</span>
+                        <span>RESPONSIVE DESIGN</span>
+                    </div>
+
+                </div>
+
+                <!-- BACKEND -->
+                <div class="skill-row">
+
+                    <div class="skill-number">02</div>
+
+                    <div class="skill-name">
+                        <h3>BACKEND DEVELOPMENT</h3>
+
+                        <p>
+                            Building reliable server-side applications,
+                            APIs and the systems that power web experiences.
+                        </p>
+                    </div>
+
+                    <div class="skill-tools">
+                        <span>NODE.JS</span>
+                        <span>EXPRESS</span>
+                        <span>REST API</span>
+                        <span>DATABASES</span>
+                    </div>
+
+                </div>
+
+                <!-- FULL STACK -->
+                <div class="skill-row">
+
+                    <div class="skill-number">03</div>
+
+                    <div class="skill-name">
+                        <h3>FULL-STACK DEVELOPMENT</h3>
+
+                        <p>
+                            Connecting frontend interfaces with backend
+                            systems to create complete web applications.
+                        </p>
+                    </div>
+
+                    <div class="skill-tools">
+                        <span>FRONTEND</span>
+                        <span>BACKEND</span>
+                        <span>API</span>
+                        <span>DATABASE</span>
+                    </div>
+
+                </div>
+
+                <!-- UI/UX -->
+                <div class="skill-row">
+
+                    <div class="skill-number">04</div>
+
+                    <div class="skill-name">
+                        <h3>UI / UX</h3>
+
+                        <p>
+                            Designing clean and intuitive experiences with
+                            a strong focus on usability and visual hierarchy.
+                        </p>
+                    </div>
+
+                    <div class="skill-tools">
+                        <span>FIGMA</span>
+                        <span>WIREFRAMES</span>
+                        <span>PROTOTYPING</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+
+            <div class="contact-header">
+                <span>04</span>
+                <span>GET IN TOUCH</span>
+            </div>
+
+            <div class="contact-content">
+
+                <p class="contact-small">
+                    HAVE A PROJECT IN MIND?
+                </p>
+
+                <h2>
+                    LET'S
+                    <span>WORK TOGETHER.</span>
+                </h2>
+
+                <a href="mailto:akintundemalik93@email.com" class="contact-email">
+                    akintundemalik93@email.com
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <a href="#home" class="footer-logo">MALIK</a>
+
+            <div class="footer-socials">
+                <a href="https://github.com/mally162638" target="_blank" rel="noopener noreferrer">GITHUB</a>
+                <a href="https://www.linkedin.com/in/abdulmalik-akintunde-8aa222439?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+                <a href="https://x.com/mally_xf?s=11" target="_blank" rel="noopener noreferrer">X</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 Malik Akintunde. All rights reserved.</p>
+
+            <a href="#home" class="about-btn">BACK TO TOP ↑</a>
+
+        </div>
+
+    </footer>
+
+    <script>
+        (function () {
+            var toggle   = document.getElementById('menuToggle');
+            var sidebar  = document.getElementById('sidebar');
+            var overlay  = document.getElementById('sidebarOverlay');
+            var closeBtn = document.getElementById('menuClose');
+
+            function isOpen() {
+                return sidebar.classList.contains('open');
+            }
+
+            function openMenu() {
+                sidebar.classList.add('open');
+                overlay.classList.add('show');
+                document.body.classList.add('menu-open');
+                toggle.setAttribute('aria-expanded', 'true');
+                closeBtn.focus();
+            }
+
+            function closeMenu(returnFocus) {
+                if (!isOpen()) return;
+                sidebar.classList.remove('open');
+                overlay.classList.remove('show');
+                document.body.classList.remove('menu-open');
+                toggle.setAttribute('aria-expanded', 'false');
+                if (returnFocus) toggle.focus();
+            }
+
+            toggle.addEventListener('click', openMenu);
+            closeBtn.addEventListener('click', function () { closeMenu(true); });
+            overlay.addEventListener('click', function () { closeMenu(true); });
+
+            // Close when a sidebar link is tapped (the page then scrolls to the section)
+            sidebar.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () { closeMenu(false); });
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (!isOpen()) return;
+
+                if (e.key === 'Escape') {
+                    closeMenu(true);
+                    return;
+                }
+
+                // Keep keyboard focus inside the sidebar while it is open
+                if (e.key === 'Tab') {
+                    var items = sidebar.querySelectorAll('a[href], button');
+                    var first = items[0];
+                    var last  = items[items.length - 1];
+
+                    if (e.shiftKey && document.activeElement === first) {
+                        e.preventDefault();
+                        last.focus();
+                    } else if (!e.shiftKey && document.activeElement === last) {
+                        e.preventDefault();
+                        first.focus();
+                    }
+                }
+            });
+
+            // If the window grows past the sidebar breakpoint, reset everything
+            window.addEventListener('resize', function () {
+                if (window.matchMedia('(min-width: 901px)').matches) {
+                    closeMenu(false);
+                }
+            });
+        })();
+    </script>
+
+</body>
+</html>
