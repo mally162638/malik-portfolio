@@ -1266,7 +1266,8 @@ button:focus-visible {
         grid-column: 2;
         justify-content: flex-start;
     }
-   .hero-image{
+
+    .hero-image{
         margin-bottom: 150px;
         margin-left: 30px;
         width: 120%;
@@ -1570,6 +1571,36 @@ button:focus-visible {
     .skill-row {
         padding: 28px 0;
     }
+
+    .hero h1 {
+        font-size:clamp(2.5rem,14vw,5rem);
+    }
+
+    .about h2 {
+    font-size: clamp(1.8rem, 9vw, 3.5rem);
+}
+
+.projects-title h2 {
+    font-size: clamp(2.2rem, 12vw, 4.5rem);
+}
+
+.skills-intro h2 {
+    font-size: clamp(2.4rem, 13vw, 4.8rem);
+}
+
+.contact h2 {
+    font-size: clamp(2.1rem, 11vw, 4.8rem);
+}
+    
+    .hero-image{
+        margin-top: 80px;
+        margin-right: 100px;
+        width: 130%;
+    }
+}
+
+.hero-content{
+    margin-top:30px;
 }
 
 
@@ -1591,6 +1622,16 @@ button:focus-visible {
 
     .footer-socials {
         gap: 18px;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+
+    .hero-image{
+        margin-bottom: 150px;
+        margin-left: 30px;
+        width: 140%;
     }
 }
 
