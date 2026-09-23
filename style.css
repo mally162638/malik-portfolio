@@ -370,8 +370,8 @@ button:focus-visible {
     grid-template-columns: 1.2fr 1fr;
     align-items: center;
     gap: 2rem;
-    min-height: calc(100vh - var(--header-h));
-    min-height: calc(100svh - var(--header-h));
+    min-height: clamp(560px, calc(100vh - var(--header-h)), 820px);
+    min-height: clamp(560px, calc(100svh - var(--header-h)), 820px);
     padding: 0 var(--gutter);
     overflow: hidden;
 }
@@ -521,7 +521,7 @@ button:focus-visible {
 ========================= */
 
 .about {
-    min-height: 100vh;
+    min-height: min(100vh, 820px);
     padding: 120px var(--gutter) 100px;
     background: var(--bg);
     position: relative;
@@ -830,7 +830,7 @@ button:focus-visible {
 ========================= */
 
 .contact {
-    min-height: 80vh;
+    min-height: min(80vh, 640px);
     padding: 120px var(--gutter) 100px;
     background: var(--bg);
 }
@@ -964,7 +964,7 @@ button:focus-visible {
 }
 
 .about-btn {
-    border: 2px solid rgb(19, 1, 1);
+    border: 5px solid rgb(19, 1, 1);
     border-radius: 20px;
     padding: 12px;
 }
@@ -1033,7 +1033,7 @@ button:focus-visible {
   color: var(--color-text);
   background: var(--color-background);
   box-shadow: 0 0 0.2em 0 var(--color-background);
-  transition: 1s;
+  transition: 2s;
 }
 
 .button:active {
@@ -1142,6 +1142,48 @@ button:focus-visible {
     outline: 0.4em solid transparent;
     outline-offset: 0.4em;
   }
+}
+
+
+/* =========================
+   HOVER EFFECTS
+   (mouse devices only, so touch screens don't get "stuck" hovers)
+========================= */
+
+@media (hover: hover) {
+
+    .project-item:hover {
+        padding-left: 20px;
+    }
+
+    .project-item:hover h3,
+    .project-item:hover .project-view {
+        color: var(--accent);
+    }
+
+    .skill-row:hover {
+        padding-left: 20px;
+    }
+
+    .skill-row:hover h3 {
+        color: var(--accent);
+    }
+
+    .hamburger:hover,
+    .sidebar-close:hover {
+        background: #ffffff;
+    }
+
+    .hamburger:hover span,
+    .sidebar-close:hover::before,
+    .sidebar-close:hover::after {
+        background: #111111;
+    }
+
+    .sidebar-cta:hover {
+        background: #ffffff;
+        color: #111111;
+    }
 }
 
 
